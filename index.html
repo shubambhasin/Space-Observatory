@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NASA | API</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
-    <div class="header">
+    <br><br>
+    <div class="header text-center">
         <h2>Welcome to Space Earth Observatory</h2>
+        <small>The data will be fetched from APOD, which is a NASA API. APOD stands for: <strong>Astronomy picture of
+                the day</strong>.</small>
+        <br>
+        <small>So it technically refreshes after one day.</small>
     </div>
+    <br><br>
 
-    <button class="apod-btn">Astronomy Picture of the Day</button>
-    <button id="clear"> Clear</button>
+    <div class="container">
 
-    <div class="output">
-        <div class="title">
+        <button class="apod-btn btns">Astronomy Picture of the Day</button>
+        <br>
+        <button id="clear" class="btns"> Clear</button>
+        <br><br>
 
+        <div class="output">
+            <div class="title">
+
+            </div>
+
+            <br>
+            <div class="copyright"></div>
+            <br>
+            <div class="date"></div>
+            <br>
+            <div class="space-image">
+                <img src="" id="image" alt="">
+            </div>
+            <br>
+            <h2 class="explain-title"></h2>
+            <br>
+
+            <div class="explaination">
+
+            </div>
         </div>
-        <div class="copyright">
 
-        </div>
-        <div class="space-image">
-            <img src="" id="image" alt="">
-        </div>
-        <div class="date">
-
-        </div>
-        <div class="explaination">
-
-        </div>
     </div>
+    <br><br>
 
 
     <script src="./working.js"></script>
 </body>
+
 </html>
