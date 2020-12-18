@@ -24,7 +24,7 @@ apodBtn.addEventListener('click', function getApodInfo() {
         copyright.innerHTML = `Copyright: ${data.copyright}`
         console.log(data.url)
         document.getElementById("image").src = data.url
-        document.getElementById("image") = data.url
+        document.getElementById("image").style.padding= "0.5rem"
 
 
     })
